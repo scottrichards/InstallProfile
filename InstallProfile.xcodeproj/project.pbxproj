@@ -12,6 +12,7 @@
 		01EB148427F26124003275E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01EB148327F26124003275E2 /* Assets.xcassets */; };
 		01EB148727F26124003275E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EB148527F26124003275E2 /* Main.storyboard */; };
 		01EB148927F26124003275E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01EB148827F26124003275E2 /* main.m */; };
+		01EB149127F26386003275E2 /* SeboyaProfile.icc in Resources */ = {isa = PBXBuildFile; fileRef = 01EB149027F26373003275E2 /* SeboyaProfile.icc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		01EB148627F26124003275E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01EB148827F26124003275E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01EB148A27F26124003275E2 /* InstallProfile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstallProfile.entitlements; sourceTree = "<group>"; };
+		01EB149027F26373003275E2 /* SeboyaProfile.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeboyaProfile.icc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,13 @@
 			children = (
 				01EB147D27F26122003275E2 /* AppDelegate.h */,
 				01EB147E27F26122003275E2 /* AppDelegate.m */,
+				01EB148327F26124003275E2 /* Assets.xcassets */,
+				01EB148A27F26124003275E2 /* InstallProfile.entitlements */,
+				01EB148827F26124003275E2 /* main.m */,
+				01EB148527F26124003275E2 /* Main.storyboard */,
+				01EB149027F26373003275E2 /* SeboyaProfile.icc */,
 				01EB148027F26122003275E2 /* ViewController.h */,
 				01EB148127F26122003275E2 /* ViewController.m */,
-				01EB148327F26124003275E2 /* Assets.xcassets */,
-				01EB148527F26124003275E2 /* Main.storyboard */,
-				01EB148827F26124003275E2 /* main.m */,
-				01EB148A27F26124003275E2 /* InstallProfile.entitlements */,
 			);
 			path = InstallProfile;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EB149127F26386003275E2 /* SeboyaProfile.icc in Resources */,
 				01EB148427F26124003275E2 /* Assets.xcassets in Resources */,
 				01EB148727F26124003275E2 /* Main.storyboard in Resources */,
 			);
@@ -280,6 +284,7 @@
 				DEVELOPMENT_TEAM = RC9C5D5R3L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -306,6 +311,7 @@
 				DEVELOPMENT_TEAM = RC9C5D5R3L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;

@@ -9,18 +9,22 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
+    NSURL *pathToICC = [[NSBundle mainBundle] URLForResource:@"SeboyaProfile" withExtension:@"icc"];
+    _pathToProfile = [pathToICC absoluteString];
+    NSLog(@"Path: %@", _pathToProfile);
+    _pathTextField.stringValue = _pathToProfile;
+    
 }
 
 
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
+- (IBAction)onInstallProfile:(id)sender {
+    NSLog(@"Installing Profile at: %@", _pathToProfile);
+    // TODO: Add code to Install the Color Profile
+    //     ColorSyncDeviceSetCustomProfiles(kColorSyncDisplayDeviceClass, tmpUUID, tmpDict);
 
-    // Update the view, if already loaded.
 }
-
 
 @end
